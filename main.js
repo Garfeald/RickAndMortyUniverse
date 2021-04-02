@@ -27,6 +27,7 @@ const backToMain = document.getElementById('button__main').addEventListener('cli
     $('.block_autocomplete').removeClass('block_autocomplete--active')
     $("#button-back").removeClass('button-back-display-flex')
     $("#body-details").removeClass('body-details-display-flex')
+    $("#body").removeClass('body-display-none');
     $("#body-details").empty();
     document.getElementById('body').innerHTML = ''
 })
