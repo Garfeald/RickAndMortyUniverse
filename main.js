@@ -4,7 +4,6 @@ const randomNumbers = (max) => Math.floor(Math.random() * Math.floor(max));
 const check = document.getElementById('button-show').addEventListener('click', () => {
     asyncRick(randomNumbers(667));
     $('.block-button').addClass('changed')
-    $('.block-button__main').addClass('block-button__main--active')
 })
 
 const asyncRick = async (id) => {
@@ -19,6 +18,7 @@ const asyncRick = async (id) => {
             `
             console.log(awaitRick.url)
     }
+    const awaitMain = await $('.block-button__main').addClass('block-button__main--active')
 }
 
 const backToMain = document.getElementById('button__main').addEventListener('click', () => {
