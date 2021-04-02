@@ -10,7 +10,7 @@
 
 body{
     width: 100%;
-    min-height: 1000px;
+    min-height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@ body{
 
 .body{
     margin-top: 80px;
-    min-height: 1000px;
+    min-height: 600px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,7 +79,7 @@ body{
     cursor: pointer;
     color: #fff;
     background-color: #3b2751;
-    margin: 20px 0 0 20px;
+    margin: 20px 0 0 0;
     border-radius: 5px;
     box-shadow: 1px 1px 1px 1px #3b2751;
     transition: 0.6s;
@@ -98,7 +98,7 @@ body{
     cursor: pointer;
     color: #fff;
     background-color: #3b2751;
-    margin: 20px 0 0 20px;
+    margin: 20px 0 0 0;
     border-radius: 5px;
     box-shadow: 1px 1px 1px 1px #3b2751;
     transition: 0.6s;
@@ -143,12 +143,36 @@ body{
     transition: 0.6s;
 }
 
+.button-back__item-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 60px;
+    height: 60px;
+    cursor: pointer;
+    color: #fff;
+    background: linear-gradient(0.85turn, #a4c7d6, #a4f169, #20e6ec);
+    font-size: 25px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px 1px #3b2751;
+    transition: 0.6s;
+}
+
 .button-back__item:hover{
     color: #f69d3c;
     border: 2px solid #f69d3c;
 }
 
 .button-back{
+    margin: 50px 0;
+    margin-right: 45%;
+    display: none;
+    position: fixed;
+    margin-bottom: 700px;
+    margin-right: 75%;
+}
+
+.button-back-image{
     margin: 50px 0;
     margin-right: 45%;
     display: none;

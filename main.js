@@ -13,7 +13,7 @@ const asyncRick = async (id) => {
         document.getElementById('body').innerHTML +=
             `
                 <div id="img1" class="block-image">
-                    <img src="${awaitRick.url}" class="image" onclick="infoClick(${id + i})"/>
+                    <img src="${awaitRick.url}" class="image" onclick="infoClickImage(${id + i})"/>
                 </div>
             `
             console.log(awaitRick.url)
@@ -26,8 +26,10 @@ const backToMain = document.getElementById('button__main').addEventListener('cli
     $('.block-button__main').removeClass('block-button__main--active')
     $('.block_autocomplete').removeClass('block_autocomplete--active')
     $("#button-back").removeClass('button-back-display-flex')
+    $("#button-back-image").removeClass('button-back-display-flex')
     $("#body-details").removeClass('body-details-display-flex')
     $("#body").removeClass('body-display-none');
     $("#body-details").empty();
     document.getElementById('body').innerHTML = ''
 })
+
