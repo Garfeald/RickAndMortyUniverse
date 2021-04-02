@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./autocomplete.css">
+    <link rel="stylesheet" href="./normolize-css.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="block-button__main">
+        <button class="button__main" id="button__main">Main Menu</button>
+    </div>
+    <div class="block-button">
+        <button class="block-button__show" id="button-show">Show Images</button>
+        <button class="block-button__autocomplete" id="button-autocomplete">Show Search</button>
+    </div>
+    <div id="body" class="body">
+
+    </div>
+    <div class="button-back" id="button-back">
+        <button class="button-back__item" id="button-back__item" onclick="buttonBack()"><</button>
+    </div>
+    <div class="block_autocomplete">
+        <input 
+            class="form-control" 
+            list="datalistOptions" 
+            type="search" 
+            id="autocomlete" 
+            placeholder="Input character's name..." 
+            onclick="inputEventPreventDefault(event)"
+        >
+        <div #="block-datalist" class="block-datalist">
+            <ul id="datalistOptions" class="datalistOptions"></ul>
+        </div>
+    </div>
+    <div class="body-details" id="body-details">
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="./details.js"></script>
+    <script src="./autocomlete.js"></script>
+</body>
+</html>
